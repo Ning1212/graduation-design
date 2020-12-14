@@ -63,10 +63,10 @@ class Pie extends Component {
               (root);
           };
 
-        let color = d3.scaleOrdinal(d3.quantize(d3.interpolateRainbow, 7));
+        let color = d3.scaleOrdinal(d3.quantize(d3.interpolateCividis, 7));
         console.log(data.children.length);
         let root = partition(data);
-        console.log(root);
+        // console.log(root);
         root.each(d => d.current = d);
 
         const svg = d3.select('#PieSvg')

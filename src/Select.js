@@ -6,6 +6,7 @@ import $ from 'jquery';
 import * as d3 from 'd3';
 import { PieDraw } from './Pie';
 import { MapData } from './list';
+import { MdsGetIndex } from "./mds";
 
 class Select extends Component {
     
@@ -21,6 +22,7 @@ class Select extends Component {
     }
     
     render() {
+        MdsGetIndex(0,'北京',this.state.data1,this.state.data2);
         let linear = d3.scaleLinear().domain([this.state.min, this.state.max]).range([20, 100]);
         let linear1 = d3.scaleLinear().domain([this.state.min, this.state.max]).range([0.7, 1]);
         return (
@@ -91,6 +93,7 @@ class Select extends Component {
             // console.log(cities.length);
             // console.log(max,min);
             PieDraw(dataset["2012"]['北京'],'北京');
+            
             this.setState({
                 city:cities,
                 data1:dataset,

@@ -5,6 +5,7 @@ import Map from './Map';
 import Pie from './Pie';
 import List from './list';
 import Bar from './Bar';
+import Mds from './mds';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <div id="top" style={{border:'dashed',borderWidth:2,marginLeft:'1px',
                             borderColor:'rgba(1,1,1,0.5)'}}>
             <h1 style={{marginTop:'-3px',fontFamily:'微软雅黑',color:"gray"}}>
-              碳排放大数据可视分析系统
+              碳排放数据可视系统
             </h1>
         </div>
 
@@ -27,6 +28,13 @@ function App() {
                             borderBottomColor:'rgba(1,1,1,0.5)'}}>
                 <Select />
             </div>
+            <div className="panell-heading"  style={{border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,
+                            borderBottomColor:'rgba(1,1,1,0.5)',width:'98%'}}>
+                碳排放城市关联
+            </div>
+            <div style={{height:'170px',width:'455px'}}>
+                <Mds />
+            </div>
         </div>
 
         <div id="center" style={{border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,marginLeft:'1px',
@@ -39,7 +47,7 @@ function App() {
                             borderRightColor:'rgba(1,1,1,0.5)'}}>
                 <List />
             </div>
-            <div  style={{width:'81%',height:'277px',border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,
+            <div  style={{width:'81%',height:'470px',border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,
                             borderBottomColor:'rgba(1,1,1,0.5)',float:'left'}}>
                 <Map />
             </div>              
@@ -49,7 +57,7 @@ function App() {
                             borderRightColor:'rgba(1,1,1,0.5)',borderBottomColor:'rgba(1,1,1,0.5)',borderLeftColor:'rgba(1,1,1,0.5)'}}>
             <div className="panell-heading"  style={{border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,
                             borderBottomColor:'rgba(1,1,1,0.5)',width:'98%'}}>
-                碳排放生成组成
+                碳排放生产组成
             </div>
             <div  style={{width:'99%',height:'283px'}}>
                 <Pie />
