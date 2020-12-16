@@ -22,7 +22,7 @@ function App() {
                             borderRightColor:'rgba(1,1,1,0.5)',borderBottomColor:'rgba(1,1,1,0.5)',borderLeftColor:'rgba(1,1,1,0.5)'}}>
             <div className="panell-heading"  style={{border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,
                             borderBottomColor:'rgba(1,1,1,0.5)',width:'98%'}}>
-                碳排放城市占比
+                碳排放省份选择
             </div>
             <div  style={{width:'99%',height:'277px',border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,
                             borderBottomColor:'rgba(1,1,1,0.5)'}}>
@@ -30,7 +30,7 @@ function App() {
             </div>
             <div className="panell-heading"  style={{border:'dashed',borderColor:'rgba(0,0,0,0)',borderWidth:2,
                             borderBottomColor:'rgba(1,1,1,0.5)',width:'98%'}}>
-                碳排放城市关联
+                碳排放省份关联
             </div>
             <div style={{height:'170px',width:'455px'}}>
                 <Mds />

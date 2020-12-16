@@ -57,6 +57,7 @@ class Select extends Component {
                                             console.log(item);
                                             PieDraw(this.state.data1["2012"][item],item);
                                             MapData(this.state.data2["2012"][item],item);
+                                            MdsGetIndex(index,item,this.state.data1,this.state.data2);
                                         }}
                                         >
                                         {item}
