@@ -96,9 +96,11 @@ export default class Bar extends Component {
                     //     alignWithLabel: true
                     // },
                     axisLabel:{
-                        color:'#6c706f',
+                        color:"black",
                         interval: 0,
-                        rotate:40
+                        fontSize:11,
+                        fontweight:650,
+                        rotate:38
                     },
                 },
                 yAxis: {

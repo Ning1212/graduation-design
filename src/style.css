@@ -24,14 +24,19 @@ body {
 
 #left{
 	height: 500px;
-	width: 30%;
+	width: 25%;
 	float: left;
 }
 
 #center{
 	height: 500px;
-	width: 69.3%;
+	width: 48%;
 	float: left;
+}
+#rightTop{
+	height:500px;
+	width: 26%;
+	float:left;
 }
 /* 
 #right{
@@ -41,14 +46,14 @@ body {
 } */
 
 #leftBottom{
-	height: 313px;
-	width: 30%;
+	height: 350px;
+	width: 25%;
 	float: left;
 }
 
 #centerBottom{
-	height:313px; /*364 */
-	width: 69.3%;
+	height:350px; /*364 */
+	width: 74.3%;
 	float: left;
 }
 

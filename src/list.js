@@ -49,7 +49,7 @@ export default class List extends Component {
 
     render() {
         return (
-            <svg width={'200px'} height={'470px'} xmlns={`http://www.w3.org/2000/svg`}>
+            <svg width={'100%'} height={'470px'} xmlns={`http://www.w3.org/2000/svg`}>
             {
                 this.state.list.map( (item, index) => 
                     <g>
@@ -61,14 +61,14 @@ export default class List extends Component {
                             style={{
                                 position:'absolute',
                                 opacity:0.8,
-                                fill:this.state.colorFlag === -1 ? 'gray' : (this.state.colorFlag === index ? 'steelblue' : 'gray'),
+                                fill:this.state.colorFlag === -1 ? 'gray' : (this.state.colorFlag === index ? 'OrangeRed' : 'gray'),
                                 // fill:'gray',
                                 strokeWidth: 1,
                                 stroke:'#AEEEEE'
                             }}
                             onClick = {()=>{
                                 console.log(index);
-                                if(index !==     this.state.index)
+                                if(index !== this.state.index)
                                     this.setState({
                                         colorFlag:index
                                     })
@@ -83,7 +83,7 @@ export default class List extends Component {
                             }}
                         >
                         </circle>
-                        <text style={{position:'absolute',fontSize:8}} 
+                        <text style={{position:'absolute',fontSize:13,fontWeight:500}} 
                                 x={20} y={15+index*15}>
                             {item}
                         </text>

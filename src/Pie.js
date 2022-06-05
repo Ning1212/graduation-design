@@ -19,17 +19,19 @@ class Pie extends Component {
     
     render() {
         return (
-            <div id={'PieSvg'} style={{width:'100%',height:'282px'}}>            
+            <div id={'PieSvg'} style={{width:'100%',height:'315px'}}>            
             </div>
         )
     }
-
+   
     drawChart(dataset,city){
-        
+   
         console.log(dataset,city);
         d3.select('#PieSvg')
             .selectAll('svg')
-            .remove();
+            .remove()
+            
+            
         let width = 224;
         let radius = width / 6;
         let height=102; 
@@ -73,7 +75,7 @@ class Pie extends Component {
             .append('svg')
             .attr("viewBox", [0, 0, width, width])
             .attr('width', '100%')
-            .attr('height', '282px')
+            .attr('height', '315px')
             .style("font", "10px sans-serif");
 
         const g = svg.append("g")
@@ -93,6 +95,7 @@ class Pie extends Component {
             .attr("fill", d => { while (d.depth > 1) d = d.parent; return color(d.data.name); })
             .attr("fill-opacity", d => arcVisible(d.current) ? (d.children ? 0.6 : 0.4) : 0)
             .attr("d", d => arc(d.current));
+        console.log(root.descendants().slice(1))
 
         path.filter(d => d.children)
             .style("cursor", "pointer")

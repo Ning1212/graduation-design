@@ -7,6 +7,8 @@ import * as d3 from 'd3';
 import { PieDraw } from './Pie';
 import { MapData } from './list';
 import { MdsGetIndex } from "./mds";
+import { backgroundColor } from 'echarts/lib/theme/dark';
+import { color } from 'echarts/lib/export';
 
 class Select extends Component {
     
@@ -27,7 +29,7 @@ class Select extends Component {
         let linear1 = d3.scaleLinear().domain([this.state.min, this.state.max]).range([0.7, 1]);
         return (
             <div  style={{height:'100%',width:'100%'}}>
-                <div id={"CityBtn"} style={{height:'275px',width:'100%',float:'left',overflowY:'scroll'}}>    
+                <div id={"CityBtn"} style={{height:'198px',width:'100%',float:'left',overflowY:'scroll'}}>    
                     <table  border={0} cellPadding={0} cellSpacing={0} style={{marginLeft:4}}>   
                     {
                         
@@ -40,9 +42,9 @@ class Select extends Component {
                                     <td id={"List"+index}
                                         key={index}
                                         style={{
-                                            fontSize:11,
+                                            fontSize:20,
                                             fontFamily:'微软雅黑',
-                                            width:'450px',
+                                            width:'510px',
                                             textAlign:'center',
                                             background:`linear-gradient(to right,rgba(70,130,180) 0%, rgba(70,130,180,0) ${
                                                 linear(this.state.data1["2012"][Object.keys(this.state.data1[2012])[index]]["Total Consumption"]["Total"])}%)`,
@@ -54,11 +56,15 @@ class Select extends Component {
                                             // opacity: linear1(this.state.data["2012"][Object.keys(this.state.data[2012])[index]]["Total Consumption"]["Total"])
                                         }}
                                         onClick={(e)=>{
-                                            console.log(item);
+                                            for(let i=0;i<this.state.city.length;i++){
+                                                document.getElementById('List'+i).style.border = '2px solid #ccc';
+                                            }
+                                            e.target.style.border = '2px solid red';
                                             PieDraw(this.state.data1["2012"][item],item);
                                             MapData(this.state.data2["2012"][item],item);
                                             MdsGetIndex(index,item,this.state.data1,this.state.data2);
                                         }}
+                                       
                                         >
                                         {item}
                                     </td>
