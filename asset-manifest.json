@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/graduation-design/static/css/main.436c2398.chunk.css",
+    "main.js": "/graduation-design/static/js/main.5e8ce990.chunk.js",
+    "main.js.map": "/graduation-design/static/js/main.5e8ce990.chunk.js.map",
+    "runtime-main.js": "/graduation-design/static/js/runtime-main.4224967c.js",
+    "runtime-main.js.map": "/graduation-design/static/js/runtime-main.4224967c.js.map",
+    "static/js/2.21a68dc0.chunk.js": "/graduation-design/static/js/2.21a68dc0.chunk.js",
+    "static/js/2.21a68dc0.chunk.js.map": "/graduation-design/static/js/2.21a68dc0.chunk.js.map",
+    "index.html": "/graduation-design/index.html",
+    "static/css/main.436c2398.chunk.css.map": "/graduation-design/static/css/main.436c2398.chunk.css.map",
+    "static/js/2.21a68dc0.chunk.js.LICENSE.txt": "/graduation-design/static/js/2.21a68dc0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4224967c.js",
+    "static/js/2.21a68dc0.chunk.js",
+    "static/css/main.436c2398.chunk.css",
+    "static/js/main.5e8ce990.chunk.js"
+  ]
+}
